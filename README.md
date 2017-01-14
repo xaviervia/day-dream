@@ -1,6 +1,6 @@
 # day-dream
 
-An uncurated collection of Fantasy Land types that I find useful.
+An playground collection of Fantasy Land types that I find useful.
 
 ```
 yarn add day-dream
