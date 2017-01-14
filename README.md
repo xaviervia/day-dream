@@ -64,6 +64,19 @@ store
 
 `map` does what you would expect
 
+### Func
+
+Wrap a function to support composition via `concat`, apply higher-order functions to it via `map` and run it with `fold`.
+
+```javascript
+import {Func} from 'day-dream'
+// or import Func from 'day-dream/Func'
+
+const addTuple = Func(([a, b]) => a + b)
+
+addTuple.concat(Func(x => x * 3)).fold([2, 5]) === 21
+```
+
 ### MergeMap
 
 This is a type very similar to [`immutable-ext`](https://github.com/DrBoolean/immutable-ext)’s `Map`, with the difference that the `concat` function of this type does an object assign between the two MergeMaps instead of running concat on every value.
