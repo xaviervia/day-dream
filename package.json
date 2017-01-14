@@ -1,9 +1,12 @@
 {
   "name": "day-dream",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A playground collection of fantasy-land types that I find useful",
   "main": "index.js",
-  "keywords": ["fantasy-land", "functional"],
+  "keywords": [
+    "fantasy-land",
+    "functional"
+  ],
   "author": "Fernando Via Canel <fernando.via@gmail.com>",
   "license": "MIT"
 }
