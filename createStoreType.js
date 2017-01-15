@@ -8,6 +8,8 @@ const createStoreType = (reducer, emptyState) => {
   })
 
   Store.empty = () => Store(emptyState)
+
+  return Store
 }
 
 module.exports = createStoreType
