@@ -1,6 +1,6 @@
 {
   "name": "day-dream",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "A playground collection of fantasy-land types that I find useful",
   "main": "index.js",
   "keywords": [
