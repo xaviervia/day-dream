@@ -8,5 +8,9 @@
     "functional"
   ],
   "author": "Fernando Via Canel <fernando.via@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "immutable": "^3.8.1",
+    "immutable-ext": "^1.0.8"
+  }
 }

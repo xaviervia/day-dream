@@ -97,6 +97,25 @@ deepEqual(
 )
 ```
 
+### PairList
+
+An object structure type that treats the object as an unordered set of tuples `[String, a]` where String is the key.
+
+`concat` will merge, exactly like [MergeMap](#MergeMap) but both `map` and `fold` take a function with the signature `([String, a]) => [String, a]` as an argument.
+
+```javascript
+import {PairList} from 'day-dream'
+// or import PairList from 'day-dream/PairList'
+
+deepEqual(
+  PairList({a: 1})
+    .concat(PairList({b: 2}))
+    .map(([key, value]) => [key.toUpperCase(), value + 1])
+    .fold(([key, value]) => [key, value * 2]),
+  {A: 4, B: 6}
+)
+```
+
 ## Credits
 
 - https://github.com/DrBoolean
